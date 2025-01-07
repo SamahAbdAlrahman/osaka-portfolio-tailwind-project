@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+    <meta name="description" content="OSAKA (Tailwind) - One Page Portfolio Template ">
+    
+    <meta name="author" content="samah abdalrahman">
+<link rel="icon" type="image/png" href="assets/bg.jpg">
+<script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Tailwind - OSAKA</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <!-- Tailwind CSS CDN -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet"> -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+     <link href="css/output.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+
+<body>
+  <!--  start nav -->
+  <nav class=" z-[1000] fixed top-0 left-0 w-full bg-black">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <a class="text-white text-lg font-semibold tracking-wider" href="#">OSAKA - Tailwind</a>
+      
+      <!-- Toggle Button (Visible on Small Screens) -->
+      <button
+        class="flex flex-col justify-between h-5 w-8 p-0 md:hidden"
+        type="button"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <span class="block h-0.5 w-full bg-white"></span>
+        <span class="block h-0.5 w-full bg-white"></span>
+        <span class="block h-0.5 w-1/2 bg-white"></span>
+      </button>
+      
+      <!-- Links -->
+      <div id="navMenu" class="hidden md:flex space-x-4 flex-col md:flex-row md:items-center md:space-x-4">
+        <a class="text-pink-500 uppercase text-sm" href="#home">HOME</a>
+        <a class="text-white uppercase text-sm hover:text-pink-500" href="#about">ABOUT</a>
+        <a class="text-white uppercase text-sm hover:text-pink-500" href="#service">SERVICE</a>
+        <a class="text-white uppercase text-sm hover:text-pink-500" href="#portfolio">PORTFOLIO</a>
+        <a class="text-white uppercase text-sm hover:text-pink-500" href="#testimonials">TESTIMONIALS</a>
+        <a class="text-white uppercase text-sm hover:text-pink-500" href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!-- start header -->
+  <header id="home" class="relative bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('assets/bg.jpg');">
+    <div class="container mx-auto h-full flex items-center">
+      <div class="text-white w-full flex flex-col items-center md:items-start text-center md:text-left">
+        <h1 class="uppercase font-black text-4xl md:text-5xl mb-2">
+          <span class="relative inline-block overflow-hidden">
+            Robin Steel
+            <span class="absolute inset-0 bg-white animate-slide"></span>
+          </span>
+        </h1>
+        <h2 class="text-xl md:text-2xl mb-5">
+          <span class="relative inline-block overflow-hidden">
+            Developer, Graphics & Web Design
+            <span class="absolute inset-0 bg-white animate-slide"></span>
+          </span>
+        </h2>
+        <a href="#" class="text-pink-500 uppercase text-sm tracking-wide no-underline border-b-2 border-transparent hover:border-pink-500 transition">
+          <span class="relative inline-block overflow-hidden">
+            VIEW PORTFOLIO
+            <span class="absolute inset-0 bg-white animate-slide"></span>
+          </span>
+        </a>
+        <div class="absolute bottom-4 left-4 md:left-auto md:bottom-8 flex justify-between items-center w-full md:w-1/2">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="flex items-center justify-center w-9 h-9 text-white rounded-full border border-gray-300 hover:border-white transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank" class="flex items-center justify-center w-9 h-9 text-white rounded-full border border-gray-300 hover:border-white transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="flex items-center justify-center w-9 h-9 text-white rounded-full border border-gray-300 hover:border-white transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net" target="_blank" class="flex items-center justify-center w-9 h-9 text-white rounded-full border border-gray-300 hover:border-white transition">
+                <i class="fab fa-behance"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Scroll Indicator -->
+          <!-- <div class="hidden md:flex flex-col items-center">
+            <a href="#about" class="relative block w-6 h-9 border border-gray-300 rounded-md hover:border-white transition ">
+              <span class="block w-1 h-1 bg-white rounded-full absolute left-1/2 top-2 transform -translate-x-1/2 animate-bounce "></span>
+            </a>
+          </div> -->
+          <div class="home-scroll flex justify-center items-center">
+            <a href="#about" class="relative block w-6 h-9 border border-[rgba(220,220,220,0.37)] rounded-[40%]  hover:border-white">
+              <span class="absolute block w-[2.2px] h-[2.2px] bg-white rounded-full left-1/2 top-[10px] "></span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+<!-- start about -->
+<section class="py-16 bg-cover bg-center" id="about" >
+  <div class="w-11/12 m-auto">
+      <!-- about title -->
+      <div class=" text-center relative">
+          <p class="text-6xl tracking-wide text-gray-200 uppercase leading-[1.2] relative font-extrabold text-center">
+            About
+        </p>
+        
+        <p class="z-[22] text-black uppercase text-4xl tracking-wide font-extrabold absolute w-full top-[25%] text-center mt-1 leading-[1.2]">
+          About
+        </p>
+        
+      </div>
+
+      
+      <!-- description text -->
+      <p class="text-sm text-center text-gray-400 mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+      <!-- about content -->
+      <div class=" flex justify-between items-start flex-wrap md:flex-nowrap">
+          <!-- image -->
+          <div class="about-img w-full md:w-1/3 mb-12 md:mb-0">
+              <img src="assets/me.jpg" alt="about-img" class="w-full h-auto">
+          </div>
+
+          <!-- text -->
+          <div class="my-auto w-full md:w-2/3 pl-0 md:pl-28">
+              <h4 class="font-semibold text-2xl mb-2">Robin Steel</h4>
+              <h6 class="text-pink-500 font-semibold text-base mb-6">Creative UI/UX Designer, Developer.</h6>
+              <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="font-semibold text-black">E-mail:
+                  <a href="mailto:info@yourdomain.com" class="text-black hover:text-pink-500">info@yourdomain.com</a>
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- end about -->
+
+<!--  start Services-->
+<section class="py-16 services" id="service">
+  <div class="w-11/12 m-auto">
+    <!-- Services Title -->
+    <div class="text-center relative">
+      <p class="text-6xl tracking-wide text-[#343a40] uppercase leading-[1.2] font-extrabold">
+        Services
+      </p>
+      <p class="z-[22] text-white uppercase text-4xl tracking-wide font-extrabold absolute w-full top-[25%] text-center mt-2 leading-[1.2]">
+        Services
+      </p>
+    </div>
+
+    <p class="text-sm text-center text-gray-400 mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+<!-- Services Boxs -->
+<div class="pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-between items-start">
+<!--  Box 1 -->
+<div class="w-full mb-6">
+  <div class="p-4 bg-white relative text-center">
+    <div class="w-11/12 m-auto">
+      <i class="fas fa-anchor text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+      <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Branding</h5>
+      <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+    </div>
+  </div>
+</div>
+
+
+  <!--  Box 2 -->
+  <div class="w-full mb-6">
+    <div class="p-4 bg-white relative text-center">
+      <div class="w-11/12 m-auto">
+        <i class="far fa-chart-bar text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+        <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Marketing</h5>
+        <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Box 3 -->
+  <div class="w-full mb-6">
+    <div class="p-4 bg-white relative text-center">
+      <div class="w-11/12 m-auto">
+        <i class="fas fa-globe text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+        <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Web Design</h5>
+        <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Box 4 -->
+  <div class="w-full mb-6">
+    <div class="p-4 bg-white relative text-center">
+      <div class="w-11/12 m-auto">
+        <i class="fas fa-desktop text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+        <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Responsive</h5>
+        <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Box 5 -->
+  <div class="w-full mb-6">
+    <div class="p-4 bg-white relative text-center">
+      <div class="w-11/12 m-auto">
+        <i class="fas fa-code text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+        <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Development</h5>
+        <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Box 6 -->
+  <div class="w-full mb-6">
+    <div class="p-4 bg-white relative text-center">
+      <div class="w-11/12 m-auto">
+        <i class="fas fa-life-ring text-3xl w-16 h-16 bg-black border-2 border-white text-white rounded-full flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-8 transition-all duration-300 hover:text-pink-500"></i>
+        <h5 class="text-black text-lg font-semibold pt-8 relative service-title">Support</h5>
+        <p class="text-gray-600 pt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</section>
+<!-- end Services -->
+
+<!-- start Portfolio section -->
+<section class=" py-16" id="portfolio">
+  <div class="w-11/12 mx-auto">
+    <!-- Title -->
+     <div class=" text-center relative">
+        <p class="text-6xl tracking-wide text-gray-200 uppercase leading-[1.2] relative font-extrabold text-center">
+          Portfolio
+      </p>
+      
+      <p class="z-[22] text-black uppercase text-4xl tracking-wide font-extrabold absolute w-full top-[25%] text-center mt-1 leading-[1.2]">
+        Portfolio
+      </p>
+      
+    </div>
+
+    <p class="text-sm text-center text-gray-400 mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <!-- Nav Tabs -->
+    <nav>
+      <div class="nav nav-tabs flex justify-center space-x-4 mb-8" id="nav-tab" role="tablist">
+        <button class="nav-link text-black font-semibold py-2 px-4 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500 focus:outline-none focus:ring-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ALL</button>
+        <button class="nav-link text-black font-semibold py-2 px-4 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500 focus:outline-none focus:ring-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">DEV</button>
+        <button class="nav-link text-black font-semibold py-2 px-4 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500 focus:outline-none focus:ring-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">WEB</button>
+        <button class="nav-link text-black font-semibold py-2 px-4 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500 focus:outline-none focus:ring-0" id="nav-d-tab" data-bs-toggle="tab" data-bs-target="#nav-d" type="button" role="tab" aria-controls="nav-d" aria-selected="false">DESIGN</button>
+      </div>
+    </nav>
+
+    <!-- Tab content -->
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="portfolio-item mb-4">
+            <img src="assets/1.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/2.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/3.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/4.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/5.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/6.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="portfolio-item mb-4">
+            <img src="assets/2.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="portfolio-item mb-4">
+            <img src="assets/6.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="nav-d" role="tabpanel" aria-labelledby="nav-d-tab">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="portfolio-item mb-4">
+            <img src="assets/2.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/3.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+          <div class="portfolio-item mb-4">
+            <img src="assets/1.jpg" alt="portfolio-img" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Portfolio section -->
+
+<!-- Testimonials section -->
+<section class="py-16 pt-4 pb-md-4 "  id="testimonials">
+  <div class="m-auto w-11/12">
+<!-- title -->
+    <div class=" text-center relative">
+      <p class="text-6xl tracking-wide text-gray-200 uppercase leading-[1.2] relative font-extrabold text-center">
+        Testimonials
+    </p>
+    
+    <p class="z-[22] text-black uppercase text-4xl tracking-wide font-extrabold absolute w-full top-[25%] text-center mt-1 leading-[1.2]">
+      Testimonials
+    </p>
+    
+  </div>
+  <p class="text-sm text-center text-gray-400 mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+<!-- using : https://getbootstrap.com/docs/5.3/components/carousel/ -->
+
+<div id="carouselExampleIndicators" class="carousel slide ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+  </div>
+  <div class="carousel-inner mb-5 pb-5">
+    <div class="carousel-item active">
+      <div class="text-center border border-gray-300 border-opacity-80 relative overflow-visible pb-6">
+        <img class="rounded-full w-[85px] h-[85px]  mt-[-3rem] mx-auto mb-6" src="assets/Testimonials (1).jpg">
+        <div class="w-[88%] mx-auto ">
+          <h2 class="text-[1.1rem] font-medium">
+
+          Robin Perty
+        </h2 >
+        <h3 class="text-[0.8rem] text-[rgb(67,64,64)]">
+          Senior Desinger
+        </h3>
+        <div class="my-[0.75rem] mx-auto bg-[#ff206e] w-[35px] h-[0.8px]"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus elit. Sed sit amet tellus magna.</p>
+      </div>
+      </div>   
+     </div>
+    <div class="carousel-item">
+      <div class="text-center border border-gray-300 border-opacity-80 relative overflow-visible pb-6">
+        <img  class="rounded-full w-[85px] h-[85px]  mt-[-3rem] mx-auto mb-6" src="assets/Testimonials (2).jpg">
+        <div class="w-[88%] mx-auto ">
+          <h2 class="text-[1.1rem] font-medium">
+
+          Olivia Nealon        </h2 >
+        <h3 class="text-[0.8rem] text-[rgb(67,64,64)]">
+          Graphics Desinger        </h3>
+        <div class="my-[0.75rem] mx-auto bg-[#ff206e] w-[35px] h-[0.8px]"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus elit. Sed sit amet tellus magna.</p>
+      </div>
+      </div>    
+    </div>
+    <div class="carousel-item">
+      <div class="text-center border border-gray-300 border-opacity-80 relative overflow-visible pb-6">
+        <img  class="rounded-full w-[85px] h-[85px]  mt-[-3rem] mx-auto mb-6" src="assets/Testimonials (3).jpg">
+        <div class="w-[88%] mx-auto ">
+          <h2 class="text-[1.1rem] font-medium">
+
+          Robin Perty
+        </h2 >
+        <h3 class="text-[0.8rem] text-[rgb(67,64,64)]">
+          Senior Desinger
+        </h3>
+        <div class="my-[0.75rem] mx-auto bg-[#ff206e] w-[35px] h-[0.8px]"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus elit. Sed sit amet tellus magna.</p>
+      </div>
+      </div>
+    </div>   
+     <div class="carousel-item">
+      <div class="text-center border border-gray-300 border-opacity-80 relative overflow-visible pb-6">
+        <img  class="rounded-full w-[85px] h-[85px]  mt-[-3rem] mx-auto mb-6" src="assets/Testimonials (4).jpg">
+        <div class="w-[88%] mx-auto ">
+          <h2 class="text-[1.1rem] font-medium">
+
+          Emilie Chapin        </h2 >
+        <h3 class="text-[0.8rem] text-[rgb(67,64,64)]">
+          Graphics Desinger        </h3>
+        <div class="my-[0.75rem] mx-auto bg-[#ff206e] w-[35px] h-[0.8px]"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus elit. Sed sit amet tellus magna.</p>
+      </div>
+      </div>   
+     </div>
+     <div class="carousel-item">
+      <div class="text-center border border-gray-300 border-opacity-80 relative overflow-visible pb-6">
+        <img  class="rounded-full w-[85px] h-[85px]  mt-[-3rem] mx-auto mb-6" src="assets/Testimonials (5).jpg">
+        <div class="w-[88%] mx-auto ">
+          <h2 class="text-[1.1rem] font-medium">
+
+          Robin Perty
+        </h2 >
+        <h3 class="text-[0.8rem] text-[rgb(67,64,64)]" >
+          Senior Desinger
+        </h3>
+        <div class="my-[0.75rem] mx-auto bg-[#ff206e] w-[35px] h-[0.8px]"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus elit. Sed sit amet tellus magna.</p>
+      </div>
+      </div>   
+     </div>
+  </div>
+ 
+</div>
+
+
+  </div>
+</section>
+
+ <!--  -->
+<!-- contact section -->
+<section class="bg-black py-16" id="contact">
+  <div class="w-11/12 m-auto">
+    
+
+      <!-- contact Title -->
+      <div class="text-center relative">
+        <p class="text-6xl tracking-wide text-[#343a40] uppercase leading-[1.2] font-extrabold">
+          Get In Touch
+        </p>
+        <p class="z-[22] text-white uppercase text-4xl tracking-wide font-extrabold absolute w-full top-[25%] text-center mt-2 leading-[1.2]">
+          Get In Touch
+        </p>
+      </div>
+  
+      <p class="text-sm text-center text-gray-400 mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+      
+      <div class="pt-4 contact-content row justify-content-around">
+        <div class="contact-info1 col-md-6 ">
+          <form class="flex flex-col gap-3">
+            <input class="bg-transparent border-b-2 border-gray-600 text-white focus:outline-none focus:border-b-2 focus:border-red-500 transition-all duration-300 ease-in-out w-full py-2 px-3 text-lg leading-6" type="text" id="name" name="name" placeholder="Name*" required>
+          
+            <input class="bg-transparent border-b-2 border-gray-600 text-white focus:outline-none focus:border-b-2 focus:border-red-500 transition-all duration-300 ease-in-out w-full py-2 px-3 text-lg leading-6" type="email" id="email" name="email" placeholder="Email*" required>
+          
+            <textarea class="bg-transparent border-b-2 border-gray-600 text-white focus:outline-none focus:border-b-2 focus:border-red-500 transition-all duration-300 ease-in-out w-full py-2 px-3 text-lg leading-6" id="message" name="message" rows="5" placeholder="Message*" required></textarea>
+                      <button class="bg-white text-black w-1/3 mt-4 py-2 border-none text-lg cursor-pointer transition-all duration-400 ease-out hover:bg-[#ff206e] uppercase" type="submit">Send message</button>
+
+          </form>
+          
+          
+          
+        </div>
+        <div class="contact-info2 col-md-4 d-flex flex-column  gap-4 p-2">
+          <div class="info2-item">
+            <h3 class="h6 text-base font-medium text-[#ff206e]">Phone</h3>
+            <p class="text-white text-[0.98rem]">+38(098) 333-55-88</p> 
+          </div>
+          <div class="info2-item ">
+        
+          <h3 class="h6 text-base font-medium text-[#ff206e]">Location</h3>
+          <p class="text-white text-[0.98rem]">Kiev, st. Holoseyevskaya 88</p>
+          </div>
+          <div class="info2-item">
+        
+          <h3 class="h6 text-base font-medium text-[#ff206e]">Email</h3>
+          <p class="text-white text-[0.98rem]">info@yourdomain.com</p>
+          </div>
+        </div>
+        
+            </div>
+  </div>
+</section>
+<!--  -->
+<footer class="text-center bg-white py-8">
+  <div class="copyright text-uppercase" >
+    <p class="text-xs py-">2018 © Copyright By Osaka</p>
+  </div>
+ </footer>
+<!--  -->
+</body>
+    <!-- js file -->
+    <script src="js/main.js"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+    <!-- bootstrap 5 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

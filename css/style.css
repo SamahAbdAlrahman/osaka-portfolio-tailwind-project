@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+
+    --mainTitleColor: #212529;
+    --secondTextColor: #ff206e;
+    --font: "Open Sans", sans-serif;
+}
+body{
+font-family: var(--font);
+background-image: url(../assets/light_dot.jpg);
+height: 2000px;
+background-attachment: fixed;
+}
+.container{
+    width: 80%;
+}
+
+/* header */
+/* slider */
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 1.2s ease-in-out forwards;
+  }
+/* service */
+
+.services{
+    padding: 4rem 0rem;
+background-image: url(../assets/dark_dot.jpg);
+background-attachment: fixed;
+
+}
+  .service-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1.2px;
+    background-color:var(--secondTextColor);
+    bottom: -1rem;
+    left: calc(50% - 20px);
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+  }
+/*  */
+
+/* start testimonials section *********************************** */
+
+
+.carousel-indicators [data-bs-target]{
+    background-color: #343a40;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.carousel-inner {
+    overflow: visible !important;
+}
+
+/* end testimonials section *********************************** */
