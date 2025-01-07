@@ -1,10 +1,4 @@
 # Tailwind Project
 
-This is my first project using Tailwind CSS.
-
-## Figma Design
-You can view the design of the project in Figma [here](https://www.figma.com/design/6UCLr4LzQQARpaBq6buix2/Untitled?node-id=0-1&t=ErMlidC0jehFpnoF-1).
-
-## Features
-- Responsive design
-- Clean and modern UI
+This project is a portfolio website that I initially created, and it is available here [ https://samahabdalrahman.github.io/Osaka-Portfolio-Template-by-samah/ ].
+As part of my learning journey to enhance my skills, I rebuilt the project using Tailwind CSS. This allowed me to explore and solidify my knowledge of utility-first CSS frameworks.
